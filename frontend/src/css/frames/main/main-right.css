@@ -1,0 +1,8 @@
+/* --- Main Right --- */
+.main-right {
+    position: sticky;
+    overflow-y: hidden;
+    height: inherit;
+    flex: 1;
+    top: -1rem;
+}

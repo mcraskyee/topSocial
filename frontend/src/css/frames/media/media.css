@@ -1,0 +1,12 @@
+/* --- Media --- */
+@media screen and (width < 1024px) {
+    .main-container .main-left {
+        display: none;
+    }
+}
+
+@media screen and (width < 1300px) {
+    .main-container .main-right {
+        display: none;
+    }
+}

@@ -1,0 +1,59 @@
+/* --- Nav --- */
+nav {
+    width: 100%;
+    background-color: var(--color-white);
+    padding: 0.7rem 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.logo {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    user-select: none;
+    color: var(--color-black);
+    margin: 0 2rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.search-bar {
+    background-color: var(--panel-bgcolor);
+    width: 300px;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    /* min-width: 20vw; */
+}
+
+.bi.bi-search {
+    margin: 0 1rem;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+}
+
+.profile-section {
+    display: flex;
+    width: 11rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.profile-section>.btn:hover {
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
