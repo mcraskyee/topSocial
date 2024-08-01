@@ -1,6 +1,7 @@
 import axios from "axios";
 import { getPath } from "@/js/database/utils.js";
 
+// 从后端获取数据
 const fetchData = async (endpoint) => {
   try {
     const data = await axios.get(endpoint);
@@ -10,6 +11,7 @@ const fetchData = async (endpoint) => {
   }
 };
 
+// 获取数据库
 export const getDatabase = async () => {
   const [cards, profile, highline, message, request] = await Promise.all([
     fetchData(getPath("cards")).then((res) => res.data),

@@ -1,3 +1,5 @@
+//routes中的所有路由都从controllers中获取数据，然后将其发送到客户端
+
 const express = require("express"),
     { getCardList, getCardById, postCard, deleteCardById } = require("../controllers/cardsController"),
     cardsRouter = express.Router();

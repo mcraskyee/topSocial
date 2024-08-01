@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
-
+ 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Top Social</title>
-
+ 
   <!-- Icon import -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
+ 
 <body>
   <!-- nav  -->
   <nav>
@@ -39,20 +39,115 @@
       <!-- main-left -->
       <div class="main-left">
         <!-- profile -->
-
+        <a class="profile" href="/">
+          <div class="profile-photo">
+            <img alt="profile photo" loading="lazy" />
+          </div>
+          <div class="profile-description">
+            <h5></h5>
+            <h5></h5>
+          </div>
+        </a>
         <!-- side bar -->
-
+        <nav class="sidebar">
+          <ul>
+            <li>
+              <a class="menu-item" href="#">
+                <i class="bi bi-house"></i>
+                <h3>Home</h3>
+              </a>
+            </li>
+            <li>
+              <a class="menu-item" href="#">
+                <i class="bi bi-compass"></i>
+                <h3>Explore</h3>
+              </a>
+            </li>
+            <li>
+              <a class="menu-item" href="#">
+                <i class="bi bi-bell"></i>
+                <h3>Notification</h3>
+              </a>
+            </li>
+            <li>
+              <a class="menu-item" href="#">
+                <i class="bi bi-chat-square-dots"></i>
+                <h3>Messages</h3>
+              </a>
+            </li>
+            <li>
+              <a class="menu-item" href="#">
+                <i class="bi bi-bookmarks"></i>
+                <h3>BookMarks</h3>
+              </a>
+            </li>
+            <li>
+              <a class="menu-item" href="#">
+                <i class="bi bi-graph-up"></i>
+                <h3>Analytics</h3>
+              </a>
+            </li>
+            <li>
+              <a class="menu-item" href="#">
+                <i class="bi bi-palette"></i>
+                <h3>Theme</h3>
+              </a>
+            </li>
+            <li>
+              <a class="menu-item" href="#">
+                <i class="bi bi-gear"></i>
+                <h3>Settings</h3>
+              </a>
+            </li>
+          </ul>
+        </nav>
+ 
         <!-- side button -->
+        <button class="side-btn">
+          Create Post
+        </button>
       </div>
-
+ 
       <!-- Main middle -->
       <div class="main-middle">
+        <div class="main-middle-card-wrapper">
+          <figure class="main-middle-card popup-trigger">
+            <img alt="highline photo" loading="lazy" />
+            <div class="profile-photo">
+              <img alt="profile photo" loading="lazy" />
+            </div>
+          </figure>
+ 
+          <div class="popup">
+            <div class="popup-content">
+              <h2>Stories</h2>
+              <p>
+                Walking down the bustling city streets, I noticed a small cafe tucked away in a quiet corner. Curious, I
+                stepped inside and was greeted by the aroma of freshly
+                brewed coffee. As I sipped my drink, I overheard a group of friends sharing laughter and stories at a
+                nearby table. In that moment, I realized that even in the
+                fast-paced world, moments of connection and joy are found in the simplest of places.
+              </p>
+              <button class="popup-close">Close</button>
+            </div>
+          </div>
+        </div>
+        <!-- main middle thought-->
+        <div class="main-middle-thought-wrapper">
+          <div class="profile-photo">
+            <img alt="profile photo" loading="lazy" />
+          </div>
+          <input type="text" id="postComment" autocomplete="off" />
+          <button class="btn btn-primary">Post</button>
+        </div>
+        <!-- main middle post-->
+        <div class="main-middle-post-wrapper"></div>
       </div>
-
+ 
       <!-- main right -->
       <div class="main-right">
         <!-- main right message list-->
-
+ 
         <!-- main right request list-->
       </div>
     </div>
@@ -61,5 +156,5 @@
   </main>
   <script type="module" src="/index.js"></script>
 </body>
-
+ 
 </html>
